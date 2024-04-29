@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,102 @@
 
     <title>Oliva</title>
 </head>
-<body>
-    
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
 
-<script src="librarys/bootstrap/js/bootstrap.bundle.min.js"></script>
+    .navbar-brand {
+        font-size: 2rem;
+        color: black;
+    }
+
+    .navbar-brand:hover {
+        color: black;
+    }
+
+    .nav-link {
+        margin-right: 10px;
+        margin-left: 10px;
+        color: rgb(128, 128, 128);
+        text-transform: uppercase;
+    }
+
+    .nav-link:hover {
+        color: black;
+    }
+
+    .search {
+        outline: none;
+        height: 40px;
+        width: 80%;
+        border-radius: 20px;
+        border: 2px solid #d01117;
+        margin-right: -85px;
+    }
+
+    .btn {
+        height: 40px;
+        width: 40%;
+        outline: none;
+        border: none;
+        background-color: #d01117;
+        color: white;
+        border-radius: 30px;
+
+    }
+</style>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-light">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand " href="#"><b><i>Oliva</i></b></a>
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Organic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="me-2 px-3 search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="pic-section">
+        <div class="contanier">
+
+            <img class="img-fluid" src="image-project/top-view-vegetables-with-copy-space.jpg" alt="">
+
+        </div>
+    </div>
+
+
+    <script src="librarys/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
