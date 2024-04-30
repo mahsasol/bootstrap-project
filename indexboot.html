@@ -10,6 +10,16 @@
     <title>Oliva</title>
 </head>
 <style>
+    @font-face {
+        font-family: lobster;
+        src: url(image-project/Lobster/Lobster-Regular.ttf);
+
+    }
+    @font-face {
+        font-family: rubiks;
+        src: url(image-project/Rubik/Rubik-VariableFont_wght.ttf);
+        
+    }
     * {
         padding: 0;
         margin: 0;
@@ -17,8 +27,9 @@
     }
 
     .navbar-brand {
-        font-size: 2rem;
+        font-size:2.5rem;
         color: black;
+        font-family: "Lobster", sans-serif;
     }
 
     .navbar-brand:hover {
@@ -30,6 +41,8 @@
         margin-left: 10px;
         color: rgb(128, 128, 128);
         text-transform: uppercase;
+        font-family: 'rubik',  sans-serif;
+
     }
 
     .nav-link:hover {
@@ -42,7 +55,8 @@
         width: 80%;
         border-radius: 20px;
         border: 2px solid #d01117;
-        margin-right: -85px;
+        margin-right: -85px; 
+        font-family: 'rubik',  sans-serif;
     }
 
     .btn {
@@ -54,6 +68,32 @@
         color: white;
         border-radius: 30px;
 
+    }
+    .main{
+        background: url(image-project/top-view-vegetables-with-copy-space.jpg) no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-position: 50% 50%;
+        width: 100%;
+    }
+    .main h1{
+
+        font-size: 4rem;
+        font-weight: 700;
+        color:white;
+    }
+    .olive-name{
+        font-family: "Lobster", sans-serif;
+    }
+    .btn1{
+        height: 45px;
+        width: 35%;
+        border: none;
+        outline: none;
+        background-color:#d01117 ;
+        color: white;
+        font-weight: 700;
+        border-radius: 60px;
     }
 </style>
 
@@ -69,7 +109,7 @@
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <a class="navbar-brand " href="#"><b><i>Oliva</i></b></a>
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav m-auto mb-2 pb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -94,15 +134,17 @@
         </div>
     </nav>
 
-
-    <div class="pic-section">
-        <div class="contanier">
-
-            <img class="img-fluid" src="image-project/top-view-vegetables-with-copy-space.jpg" alt="">
-
+    <section class="main">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div style="padding-top:10rem;
+                padding-left: 18rem;" class="col-lg-7 pt-20">
+                    <h1>Organic is better life, <b class="olive-name">Oliva</b>  is more life. </h1>
+                    <button class="btn1 mt-3">More Tips</button>
+                </div>
+            </div>
         </div>
-    </div>
-
+    </section>
 
     <script src="librarys/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
