@@ -90,7 +90,9 @@
         font-family: "Lobster", sans-serif;
         text-shadow: -3px 4px 2px #555;
     }
-
+    .m-5 {
+        margin: 10rem 10rem 8rem 15rem !important;
+    }
     .btn1 {
         height: 45px;
         width: 35%;
@@ -100,9 +102,11 @@
         color: white;
         border-radius: 60px;
     }
-
-    .m-5 {
-        margin: 10rem 10rem 8rem 15rem !important;
+    .btn1:hover{
+        background-color:red;
+    }
+    .colorfocus:focus{
+        border-color: darkgreen;
     }
 </style>
 
@@ -136,7 +140,7 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="me-2 px-3 search" type="search" placeholder="Search" aria-label="Search">
+                    <input class="me-2 px-3 search colorfocus" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
